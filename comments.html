@@ -1,5 +1,18 @@
 <style>
-  .filter-type:active + .sidebarlistscroll {
+.filter-type {
+    border-bottom: 1px dotted #666;
+}
+
+.sidebarlistscroll {
+    width: 220px;
+    height: 200px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+    border: none;
+    visibility: hidden;
+}
+#filter{display:none}
+#filter:checked + .sidebarlistscroll{
     visibility: visible;
 }
 </style>
