@@ -6,9 +6,12 @@
 .sidebarlistscroll {
     width: 800px;
     margin-bottom: 15px;
-    overflow-y: hidden;
+    overflow-y: overflow;
     border: none;
     visibility: hidden;
+}
+#element::-webkit-scrollbar { 
+    display: none; 
 }
 #filter{display:none}
 #filter:checked + .sidebarlistscroll{
