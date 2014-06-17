@@ -22,7 +22,15 @@
 	</head>
 
 	<body>
-		<style scoped type="text/css" media="screen">
+			<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			<style scoped type="text/css" media="screen">
 			a:link {color:#FFFFFF;}
 			a:visited {color:#FFFFFF;}
 			a:hover {color:#E8E8FF;}
@@ -198,14 +206,7 @@
 				<table style="margin:0 auto;">
 					<tr>
 						<td style="text-align:center;">
-							<div id="fb-root"></div>
-							<script>(function(d, s, id) {
-							  var js, fjs = d.getElementsByTagName(s)[0];
-							  if (d.getElementById(id)) return;
-							  js = d.createElement(s); js.id = id;
-							  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-							  fjs.parentNode.insertBefore(js, fjs);
-							}(document, 'script', 'facebook-jssdk'));</script>
+							<div class="fb-like" data-href="https://www.facebook.com/DailyBitcoiner" data-layout="standard" data-action="like" data-show-faces="false" data-share="true"></div>
 							<br>
 							<div id="button-div" style="margin:auto;"><a href="http://www.dailybitcoiner.com/newsletter">Subscribe to Weekly Newsletter</a></div>
 							<br>
